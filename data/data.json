@@ -1,0 +1,17 @@
+{
+	"response": {
+		"products":
+				[
+					{"name":"Cord Taco", "price":"20.00","options":
+            [
+              {"color":"Whiskey", "image":"img/build/whiskey.jpg"},
+              {"color":"Coral", "image":"img/build/coral.jpg"},
+              {"color":"Cobalt Blue", "image":"img/build/cobalt.jpg"},
+              {"color":"Turquoise", "image":"img/build/turquoise.jpg"},
+              {"color":"Black Ink", "image":"img/build/black.jpg"}
+            ]
+          }
+				]
+
+	}
+}
