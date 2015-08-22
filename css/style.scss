@@ -1,4 +1,6 @@
 $background_color: rgb(228, 228, 228);
+$gold: #d49c16;
+$gray: #606060;
 
 * {
 	padding: 0;
@@ -6,6 +8,7 @@ $background_color: rgb(228, 228, 228);
 	list-style-type: none;
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
+	color: $gray;
 }
 
 *, *:before, *:after {
@@ -39,10 +42,19 @@ header img {
   margin: 0 auto;
 }
 
-.products, .info, .quantity, .customize, .complete {
+.products, .quantity, .customize, .complete {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
+	display: none;
+}
+
+.info {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 26px;
+	padding: 10px;
 }
 
 .productContainer {
@@ -96,9 +108,6 @@ header img {
 }
 
 .cart {
-	// position: fixed;
-	// top: 150px;
-	// right: 5%;
 	float: right;
   height: 58%;
   width: 30%;
@@ -130,9 +139,36 @@ footer {
 	position: absolute;
 	bottom: 0;
 	display: table;
-	// margin: 0 auto;
 	width: 90%;
 	border-radius: 5px 5px 0 0;
 	height: 15%;
 	background-color: $background_color;
+	text-align: center;
+	display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-text-align: center;
+  -webkit-flex-wrap: nowrap;
+  -webkit-align-content: center;
+  -webkit-align-items: center;
+}
+
+.steps {
+	display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+  -webkit-text-align: center;
+  -webkit-flex-wrap: nowrap;
+  -webkit-align-content: center;
+  -webkit-align-items: center;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	font-size: 2vw;
+	color: $gray;
+}
+
+.steps:hover {
+	cursor: pointer;
+	color: $gold;
 }
