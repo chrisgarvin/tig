@@ -10,7 +10,14 @@
               {"color":"Turquoise", "image":"img/build/turquoise.jpg"},
               {"color":"Black Ink", "image":"img/build/black.jpg"},
 							{"color":"Gold Element", "image":"img/build/gold.jpg"}
-            ]
+            ],
+						"prices":
+							[
+								{"quantity":50, "price":1000},
+								{"quantity":100, "price":1750},
+								{"quantity":150, "price":2250},
+								{"quantity":200, "price":2500}
+							]
           }
 				]
 
