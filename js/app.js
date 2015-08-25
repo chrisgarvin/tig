@@ -28,7 +28,7 @@ $(document).ready(function(){
       var item = data.response.products[0].options[i];
       $('.products').append("<span class='productContainer'><img class='product' data-id='" + item.color + "' src='" + item.image + "'></span>");
       $('.product').click(function(){
-        $('.cart')[0].innerHTML = "<h3>" + $(this).attr("data-id").toUpperCase() + "</h3><img src='" + this.src + "'>";
+        $('.cartProduct')[0].innerHTML = "<h3>" + $(this).attr("data-id").toUpperCase() + "</h3><img src='" + this.src + "'>";
       });
     }
 
@@ -36,7 +36,7 @@ $(document).ready(function(){
       var item = data.response.products[0].prices[i];
       $('.quantity').append("<span class='quantityContainer'><button class='quantityOption' data-id='" + item.quantity + "'> " + item.quantity + "</button></span>");
       $('.quantityOption').click(function(){
-        $('.cart').append("<h3>" + $(this).attr("data-id") + "</h3>");
+        $('.cartQuantity')[0].innerHTML = "<h3>" + $(this).attr("data-id") + "</h3>";
       });
     }
   })

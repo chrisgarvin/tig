@@ -172,3 +172,16 @@ footer {
 	cursor: pointer;
 	color: $gold;
 }
+
+button.quantityOption {
+	width: 20%;
+	height: 50px;
+	border-radius: 5px;
+	background-color: white;
+	font-size: 32px;
+	color: $gray;
+}
+
+button.quantityOption:hover {
+	color: $gold;
+}
